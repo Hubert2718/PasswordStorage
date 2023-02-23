@@ -105,7 +105,7 @@ def show_password():
     platform = input("Enter the name of the platform for which you want to see the password\n$ ")
     if platform in dict:
         paswd = getpass("Enter a encoding password: \n$ ")
-        (login, password) = decode_password(platform, paswd, "passwordsEncoded.xml")
+        (login, password) = decode_password(platform, paswd, PATH)
         print("LOGIN: {}".format(login))
         print("PASSWORD: {}".format(password))
         time.sleep(5)
